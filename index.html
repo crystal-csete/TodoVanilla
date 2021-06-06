@@ -1,0 +1,84 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+        </li>
+        <li class="nav-li">
+          <a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-li">
+          <a href="#farmer">
+            <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header id="home">
+      <h1>My Todo List</h1>
+    </header>
+    <form>
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-circle"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="notcompleted">Not Completed</option>
+        </select>
+      </div>
+    </form>
+    <div class="div todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <div id="farmer">
+      <h3>Click on the farmer</h3>
+      <div class="emoji closed active">👩‍🌾</div>
+      <div class="emoji open">🥗</div>
+    </div>
+    <div>
+      <h3>Click on the unicorn</h3>
+      <div class="emoji closed2 active2">🦄</div>
+      <div class="emoji open2">🌈</div>
+    </div>
+    <div>
+      <h3>Click on the person walking</h3>
+      <div class="emoji closed3 active3">🚶</div>
+      <div class="emoji open3">🧟</div>
+    </div>
+
+    <section>
+      <footer>
+        <h3>&#0169; 2021 Crystal's Pages</h3>
+      </footer>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
